@@ -1,0 +1,24 @@
+# unknown
+LarkShell/
+Vulcan/
+cef_user_data/
+dconf/
+ibus/
+kde.org/
+
+# system
+pulse/
+session/
+systemd/
+
+# software
+chromium/
+clash/
+clash_win/
+Code/
+GitHub Desktop/
+JetBrains/
+Typora/
+
+QtProject.conf
+
