@@ -58,6 +58,9 @@ bindsym $mod+Shift+Return exec --no-startup-id alacritty
 # kill focused window
 bindsym $mod+Shift+q kill
 
+# screen shot
+bindsym $mod+Shift+s exec --no-startup-id flameshot gui
+
 # start dmenu (a program launcher)
 #bindsym $mod+d exec --no-startup-id dmenu_run
 # A more modern dmenu replacement is rofi:
@@ -203,7 +206,8 @@ mode "resize" {
 bindsym $mod+r mode "resize"
 
 exec_always --no-startup-id fcitx5 -d
-exec_always --no-startup-id feh --randomize --bg-fill ~/Pictures/backgrounds/*
+# exec_always --no-startup-id feh --randomize --bg-fill ~/Pictures/backgrounds/*
+exec_always --no-startup-id feh --bg-fill ~/Pictures/backgrounds/Pastel\ Mix.png
 exec_always --no-startup-id polybar -c ~/.config/polybar/config.ini main
 exec_always --no-startup-id picom --config ~/.config/picom/picom.conf --experimental-backends
 exec_always mpd ~/.config/mpd/mpd.conf
