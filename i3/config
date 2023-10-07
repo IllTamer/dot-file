@@ -99,6 +99,7 @@ bindsym $mod+h split h
 # split in vertical orientation
 bindsym $mod+v split v
 
+# 全屏
 # enter fullscreen mode for the focused container
 bindsym $mod+f fullscreen toggle
 
@@ -208,6 +209,10 @@ bindsym $mod+r mode "resize"
 exec_always --no-startup-id fcitx5 -d
 # exec_always --no-startup-id feh --randomize --bg-fill ~/Pictures/backgrounds/*
 exec_always --no-startup-id feh --bg-fill ~/Pictures/backgrounds/Pastel\ Mix.png
-exec_always --no-startup-id polybar -c ~/.config/polybar/config.ini main
+# exec_always --no-startup-id polybar -c ~/.config/polybar/config.ini main
+exec_always --no-startup-id zsh ~/.config/polybar/launch.sh --shapes
 exec_always --no-startup-id picom --config ~/.config/picom/picom.conf --experimental-backends
 exec_always mpd ~/.config/mpd/mpd.conf
+
+# 自动调整class为ncmpcpp窗口位置
+for_window [class="ncmpcpp"] floating enable resize set 640 320,move right 1170px,move up 480px
