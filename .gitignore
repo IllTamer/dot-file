@@ -29,6 +29,16 @@ koodo-reader/
 Postman/
 unity3d/
 obs-studio/
+QtProject/
+yarn/
+gocqhttp/
+.android/
+mpd/log
+mpd/state
+mpd/pid
+mpd/database
 
-QtProject.conf
+# steam game
+Screeps/
+
 
