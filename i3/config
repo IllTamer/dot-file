@@ -216,3 +216,4 @@ exec_always mpd ~/.config/mpd/mpd.conf
 
 # 自动调整class为ncmpcpp窗口位置
 for_window [class="ncmpcpp"] floating enable resize set 640 320,move right 1170px,move up 480px
+for_window [class="Spotify"] floating

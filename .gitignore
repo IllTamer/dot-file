@@ -12,7 +12,7 @@ session/
 systemd/
 
 # software
-chromium/
+google-chrome/
 clash/
 clash_win/
 Code/
